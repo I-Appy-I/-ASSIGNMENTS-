@@ -1,0 +1,31 @@
+.parent {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 20px; 
+    width: 1200px;
+    margin: auto;
+    height: 1000px;
+    background-color: orange;
+}
+#box1 {
+    grid-column: 1/4;
+    background-color: purple;
+}
+#box2 {
+    grid-row: 2/4;
+    background-color: green;
+}
+#box3 {
+    grid-row: 2/3;
+    background-color: blue;
+    border-bottom: 1px solid orange;
+}
+#box4 {
+    grid-row: 3/4;
+    background-color: blue;
+}
+#box5 {
+    grid-row: 2/4;
+    background-color: black;
+}
