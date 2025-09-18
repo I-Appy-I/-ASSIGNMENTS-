@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moon Orbiting Earth </title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: black;
+    }
+
+    .earth {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: blue;
+      position: relative;
+    }
+
+    .orbit {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -150px;
+      margin-top: -150px;
+      border-radius: 50%;
+      animation: spin 6s linear infinite;
+    }
+
+    .moon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: gray;
+      position: absolute;
+      
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="earth"></div>
+  <div class="orbit">
+    <div class="moon"></div>
+  </div>
+</body>
+</html>
